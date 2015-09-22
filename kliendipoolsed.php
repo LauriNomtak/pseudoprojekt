@@ -6,13 +6,19 @@
 </head>
 <body>
 
-<button onclick="myFunction()">Tere maailm!</button>
+<button onclick="nupp()">Tere maailm!</button>
+
+<a href="www.khk.ee"></a>
+<a href="www.khk.ee" onClick="link()">Tere maailm!</a>
 
 <script>
-    function myFunction() {
-        alert("Tere maailm!!");
+    function nupp() {
+        alert("Tere maailm!");
     }
 </script>
+
+<script> function link() { alert("Tere maailm!") } </script>
+
 
 </body>
 </html>
