@@ -1,8 +1,8 @@
-?<!doctype html>
-<html>
+<!doctype html>
+<html lang="ee">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Lauri Nımtak</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Lauri N√µmtak</title>
 </head>
 <body>
 
@@ -10,25 +10,38 @@
 
 <a href="www.khk.ee" onClick="link()">Tere maailm!</a>
 
-<a href="" onclick="jaamesiia()">J‰‰me siia</a>
+<a href="" onclick="jaamesiia()">J√§√§me siia</a>
+
+<img id="kass" onclick="kasskoeraks()" src="http://g3.nh.ee/images/pix/900x585/7QYBvGhCuSg/kass-66103366.jpg"
+    style="width: 200px">
 
 <script>
     function nupp() {
         alert("Tere maailm!");
     }
-</script>
 
-<script>
     function link() {
         alert("Tere maailm!")
     }
-</script>
 
-<script>
     function jaamesiia() {
-        alert("J‰‰me siia")
+        alert("J√§√§me siia")
+    }
+
+    function kasskoeraks() {
+
+        if (document.getElementById("kass").src == "http://g3.nh.ee/images/pix/900x585/7QYBvGhCuSg/kass-66103366.jpg")
+        {
+            document.getElementById("kass").src = "http://www.lahe.mobi/gallery/139/744046b015.jpg";
+        }
+        else
+        {
+            document.getElementById("kass").src = "http://g3.nh.ee/images/pix/900x585/7QYBvGhCuSg/kass-66103366.jpg";
+        }
     }
 </script>
+
+
 
 
 </body>
