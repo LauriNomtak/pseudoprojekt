@@ -2,6 +2,7 @@
 <html lang="ee">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <title>Lauri Nõmtak</title>
 </head>
 <body>
@@ -29,20 +30,9 @@
     }
 
     function kasskoeraks() {
-
-        if (document.getElementById("kass").src == "http://g3.nh.ee/images/pix/900x585/7QYBvGhCuSg/kass-66103366.jpg")
-        {
-            document.getElementById("kass").src = "http://www.lahe.mobi/gallery/139/744046b015.jpg";
+        $("#kass").attr("src", "http://www.lahe.mobi/gallery/139/744046b015.jpg")
         }
-        else
-        {
-            document.getElementById("kass").src = "http://g3.nh.ee/images/pix/900x585/7QYBvGhCuSg/kass-66103366.jpg";
-        }
-    }
 </script>
-
-
-
 
 </body>
 </html>
