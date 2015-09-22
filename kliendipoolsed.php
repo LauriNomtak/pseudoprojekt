@@ -1,15 +1,15 @@
-<!doctype html>
-<html lang="en">
+﻿<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Lauri N�mtak</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lauri Nõmtak</title>
 </head>
 <body>
 
 <button onclick="nupp()">Tere maailm!</button>
 
-<a href="www.khk.ee"></a>
 <a href="www.khk.ee" onClick="link()">Tere maailm!</a>
+<a href="" onclick="jaamesiia()">Jääme siia</a>
 
 <script>
     function nupp() {
@@ -17,7 +17,17 @@
     }
 </script>
 
-<script> function link() { alert("Tere maailm!") } </script>
+<script>
+    function link() {
+        alert("Tere maailm!")
+    }
+</script>
+
+<script>
+    function jaamesiia() {
+        alert("Jääme siia")
+    }
+</script>
 
 
 </body>
