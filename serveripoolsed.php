@@ -33,3 +33,4 @@ if ($otsing === 0)
 
 echo $a+$b;
 
+echo htmlspecialchars($_GET["koer"]);
