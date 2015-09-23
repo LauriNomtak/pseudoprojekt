@@ -9,7 +9,7 @@
 
 <button onclick="nupp()">Tere maailm!</button>
 
-<a href="www.khk.ee" onClick="link()">Tere maailm!</a>
+<a href="http://www.khk.ee" onClick="link()">Tere maailm!</a>
 
 <a href="" onclick="jaamesiia()">Jääme siia</a>
 
@@ -49,6 +49,11 @@
         $("body").css("background-color",$("#blue").text());
     });
 
+    $("html").ready(function() {
+        $("html").on("contextmenu",function(){
+            return false;
+        });
+    });
 </script>
 
 </body>
