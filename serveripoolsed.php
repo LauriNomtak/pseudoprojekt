@@ -1,5 +1,6 @@
 <?php
 $eesnimi = "Lauri";
 $perenimi = "Nõmtak";
+$vanus = 25;
 
-echo $eesnimi,' ',$perenimi;
+echo $eesnimi.' '.$perenimi.' '.'('.$vanus.')';
