@@ -2,7 +2,7 @@
 <html lang="ee" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <title>Lauri Nõmtak</title>
 </head>
 <body id=body style="background-color:white">
@@ -19,8 +19,10 @@
 <button id=red>Red</button>
 <button id=green>Green</button>
 <button id=blue >Blue</button>
+<button id=rclick>Luba parem klõps</button>
 
 <script>
+
     function nupp() {
         alert("Tere maailm!");
     }
@@ -54,6 +56,11 @@
             return false;
         });
     });
+
+    $("#rclick").click(function(){
+        $("html").off("contextmenu");
+    });
+
 </script>
 
 </body>
