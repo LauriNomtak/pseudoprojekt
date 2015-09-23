@@ -3,5 +3,13 @@ $eesnimi = "Lauri";
 $perenimi = "Nõmtak";
 $vanus = 25;
 $eesnimi_algab_vokaaliga = false;
+$isik = array(
+    "eesnimi" => "Lauri",
+    "perenimi" => "Nõmtak",
+    "vanus" => '(25)',
+);
 
-echo $eesnimi.' '.$perenimi.' '.'('.$vanus.')';
+foreach($isik as $key => $value)
+{
+    echo $value." ";
+}
