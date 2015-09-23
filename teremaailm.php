@@ -1,6 +1,1 @@
-<?php
-$eesnimi = "Lauri";
-$perenimi = "Nõmtak";
-
-echo $eesnimi,' ',$perenimi;
-?>
+Tere maailm!
