@@ -8,8 +8,9 @@ $isik = array(
     "perenimi" => "Nõmtak",
     "vanus" => '(25)',
 );
-
 $object = new stdClass();
+$a = 1.23;
+$b = 2.34;
 
 foreach ($isik as $key => $value)
 {
@@ -29,3 +30,6 @@ if ($otsing === 0)
 {
     echo "Nimi algab vokaaliga";
 }
+
+echo $a+$b;
+
