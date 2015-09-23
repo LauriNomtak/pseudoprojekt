@@ -37,18 +37,18 @@
         $('#kass').attr("src", "http://www.lahe.mobi/gallery/139/744046b015.jpg")
     });
 
-
     $('#red').click(function() {
-        $("body").css("background-color","red");
+        $("body").css("background-color", $("#red").text());
     });
 
     $('#green').click(function() {
-        $("body").css("background-color","green");
+        $("body").css("background-color",$("#green").text());
     });
 
     $('#blue').click(function() {
-        $("body").css("background-color","blue");
+        $("body").css("background-color",$("#blue").text());
     });
+
 </script>
 
 </body>
