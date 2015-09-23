@@ -2,18 +2,12 @@
 $eesnimi = "Lauri";
 $perenimi = "Nõmtak";
 $vanus = 25;
-$eesnimi_algab_vokaaliga = false;
+$vowel = 'A' or 'E' or 'I' or 'O' or 'U' or 'Õ' or 'Ä' or 'Ö' or 'Ü';
 $isik = array(
     "eesnimi" => "Lauri",
     "perenimi" => "Nõmtak",
     "vanus" => '(25)',
 );
-
-
-if ($eesnimi_algab_vokaaliga == true)
-{
-    echo "Nimi algab vokaaliga";
-}
 
 $object = new stdClass();
 
@@ -29,3 +23,9 @@ foreach ($object as $key => $value)
     echo $value." ";
 }
 
+$otsing = strpos($eesnimi,$vowel);
+
+if ($otsing === 0)
+{
+    echo "Nimi algab vokaaliga";
+}
