@@ -20,6 +20,7 @@
 <button id=green>Green</button>
 <button id=blue >Blue</button>
 <button id=rclick>Luba parem klõps</button>
+<button id=toggle>Kass!</button>
 
 <script>
 
@@ -59,6 +60,10 @@
 
     $("#rclick").click(function(){
         $("html").off("contextmenu");
+    });
+
+    $("#toggle").click(function(){
+        $("#kass").toggle("display")
     });
 
 </script>
