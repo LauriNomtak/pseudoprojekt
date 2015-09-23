@@ -9,13 +9,23 @@ $isik = array(
     "vanus" => '(25)',
 );
 
-foreach($isik as $key => $value)
-{
-    echo $value." ";
-}
 
 if ($eesnimi_algab_vokaaliga == true)
 {
     echo "Nimi algab vokaaliga";
+}
+
+$object = new stdClass();
+
+foreach ($isik as $key => $value)
+{
+    $object->$key = $value;
+}
+
+$object->sugu = "mees";
+
+foreach ($object as $key => $value)
+{
+    echo $value." ";
 }
 
