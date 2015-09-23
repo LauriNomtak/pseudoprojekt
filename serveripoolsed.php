@@ -13,3 +13,7 @@ foreach($isik as $key => $value)
 {
     echo $value." ";
 }
+
+if ($eesnimi_algab_vokaaliga == true)
+    echo "Nimi algab vokaaliga";
+
