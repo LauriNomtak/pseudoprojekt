@@ -33,4 +33,29 @@ if ($otsing === 0)
 
 echo $a+$b;
 
-echo htmlspecialchars($_GET["koer"]);
+if(empty($_GET))
+{
+
+}
+
+else
+{
+    echo $_GET["koer"];
+}
+
+echo '<form action="?" method="post">
+    <input name="kass"/>
+    <input type = submit>
+</form>';
+
+
+if (empty($_POST))
+{
+
+}
+
+else{
+    echo "Kass oli: ".$_POST['kass'];
+}
+
+?>
