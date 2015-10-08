@@ -1,18 +1,15 @@
 <?php
 
-$posts = array(
-        '0' => array(
-            'title' => 'Man must explore, and this is exploration at its greatest',
-            'subtitle' => 'Problems look mighty small from 150 miles up',
-            'author' => 'Start Bootstrap',
-            'date' => 'September 24, 2014'
-            ),
-        '1' => array(
-            'title' => 'Kuukulguriga kiirelt kuule',
-            'subtitle' => 'Kiire võimalus näha maad kaugelt',
-            'author' => 'Astronaut',
-            'date' => 'September 24, 2030')
-);
+$db = mysqli_connect('127.0.0.1', 'root' , '', 'blog');
+mysqli_query($db, "SET NAMES 'utf8'");
+
+$posts = mysqli_query($db, "
+    SELECT
+    *
+    FROM posts
+      NATURAL JOIN authors
+");
+
 ?>
 
 <!DOCTYPE html>
@@ -115,10 +112,10 @@ $posts = array(
                             <?=$post['title']?>
                         </h2>
                         <h3 class="post-subtitle">
-                            <?=$post['subtitle']?>
+                            <?=$post['description']?>
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="#"><?=$post['author']?></a> on <?=$post['date']?></p>
+                    <p class="post-meta">Posted by <a href="#"><?=$post['name']?></a> on <?=$post['date']?></p>
                 </div>
                 <hr>
 
