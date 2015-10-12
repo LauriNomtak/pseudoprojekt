@@ -1,5 +1,6 @@
 <?php
 
+//ühendus andmebaasiga
 $db = mysqli_connect('127.0.0.1', 'root' , '', 'blog');
 mysqli_query($db, "SET NAMES 'utf8'");
 
