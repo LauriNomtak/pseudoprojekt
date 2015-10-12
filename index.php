@@ -1,7 +1,7 @@
 <?php
 
 //
-require "config.sample.php";
+require "sample.php";
 
 $db = mysqli_connect(DATABASE_HOSTNAME, DATABASE_USERNAME , DATABASE_PASSWORD, DATABASE_DATABASE);
 mysqli_query($db, "SET NAMES 'utf8'");
