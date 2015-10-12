@@ -1,6 +1,6 @@
 <?php
 
-
+//
 require "config.sample.php";
 
 $db = mysqli_connect(DATABASE_HOSTNAME, DATABASE_USERNAME , DATABASE_PASSWORD, DATABASE_DATABASE);
