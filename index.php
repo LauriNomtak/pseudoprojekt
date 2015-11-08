@@ -9,7 +9,7 @@
 <?php
 
 if (isset($_GET['page'])){
-    require ($_GET['page']."php");
+    require ($_GET['page'].".php");
 }
 
 ?>
