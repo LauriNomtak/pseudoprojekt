@@ -24,9 +24,10 @@ foreach ($object as $key => $value)
     echo $value." ";
 }
 
-$otsing = strpos($eesnimi,$vowel);
+$otsing = strpos($isik['eesnimi'],$vowel);
+$otsing2 = strpos($isik['eesnimi'],strtolower($vowel));
 
-if ($otsing === 0)
+if ($otsing === 0 or $otsing2 === 0)
 {
     echo "Nimi algab vokaaliga";
 }
